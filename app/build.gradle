@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     namespace 'com.hcz017.drawingview'
-    compileSdk 33
+    compileSdk 35
+    namespace "com.hcz017.drawingview"
     defaultConfig {
         applicationId "com.hcz017.drawingview"
         minSdk 28
@@ -27,10 +28,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.13.2'
 }
